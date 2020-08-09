@@ -3,7 +3,7 @@
 echo "Updating home-assistant image"
 UPDATE_LOG=`docker pull homeassistant/home-assistant:stable`  # if this returns "Image is up to date" then you can stop here
 
-if [ `echo $UPDATE_LOG | grep -v "Image is up to date"` ]; then
+if [ echo $UPDATE_LOG | grep -v "Image is up to date" ]; then
   if docker ps -a | grep "home-assistant" ; then
     echo "Deleting old containers"
     docker stop home-assistant  # stop the running container
