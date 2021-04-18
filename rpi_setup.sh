@@ -3,9 +3,6 @@
 echo "Getting basic utils"
 sudo apt install -y tmux screen vim build-essential exfat-utils htop ncdu samba samba-common-bin hdparm unbound nload
 
-git config --global user.email "kannan.ajay@gmail.com"
-git config --global user.name "Ajaykumar Kannan"
-
 git clone https://github.com/markgandolfo/git-bash-completion.git ~/src/git-bash-completion
 git clone git@github.com:ajaykumarkannan/bash_utils.git ~/src/bash_utils/
 
